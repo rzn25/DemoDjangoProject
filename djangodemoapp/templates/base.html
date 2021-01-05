@@ -1,0 +1,22 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{% static "bootstrap-4.3.1/dist/css/bootstrap.min.css" %}">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
+    {% block custom_css %}{% endblock custom_css %}
+    <title>
+        {% block page_title %}
+        {% endblock page_title %}
+    </title>
+</head>
+<body>
+{% block contents %}
+{% endblock contents %}
+
+{% block custom_js %}
+{% endblock custom_js %}
+</body>
+
+</html>
